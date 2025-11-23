@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cake & Bakery Palace — Sector XU-1, Greater Noida</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+        rel="stylesheet">
+
+    <style>
+        :root {
+            --accent: #d87b7b;
+            --muted: #6c757d
+        }
+
+        body {
+            font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+        }
+
+        .hero {
+            background: linear-gradient(90deg, rgba(216, 123, 123, 0.06), rgba(216, 123, 123, 0.02));
+            padding: 60px 0
+        }
+
+        .hero .badge {
+            background: var(--accent);
+            color: #fff
+        }
+
+        .gallery-img {
+            object-fit: cover;
+            height: 190px;
+            width: 100%;
+            border-radius: 8px
+        }
+
+        .service-card {
+            border: 1px solid #eee;
+            border-radius: 12px;
+            padding: 18px
+        }
+
+        .testi {
+            background: #fff;
+            border-radius: 10px;
+            padding: 18px;
+            border: 1px solid #f0eaea
+        }
+
+        footer {
+            background: #111;
+            color: #fff;
+            padding: 28px 0
+        }
+
+        @media(min-width:992px) {
+            .hero {
+                padding: 80px 0
+            }
+        }
+
+        /* GALLERY IMAGE FIX */
+.gallery-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.gallery-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Responsive height */
+@media (max-width: 768px) {
+  .gallery-img {
+    height: 180px;
+  }
+}
+
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Cake & Bakery Palace</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#specialities">Specialities</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item ms-2"><a class="btn btn-outline-primary" href="#contact"><i
+                                class="bi bi-telephone"></i>&nbsp;9999811167</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header id="home" class="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <span class="badge rounded-pill mb-3">Fresh • Eggless Options • Custom Cakes</span>
+                    <h1 class="display-5 fw-bold">Welcome to Cake & Bakery Palace</h1>
+                    <p class="lead text-muted">A perfect destination in Sector XU-1, Greater Noida for delicious cakes,
+                        pastries, cookies, snacks, and premium baked products. Fresh ingredients, expert baking, and
+                        unique flavours to make every celebration memorable.</p>
+
+                    <div class="d-flex gap-2 mt-3">
+                        <a class="btn btn-primary btn-lg" href="#order">Order Now <i
+                                class="bi bi-cart-fill ms-2"></i></a>
+                        <a class="btn btn-outline-secondary btn-lg" href="#contact">Free Home Delivery</a>
+                    </div>
+
+                    <ul class="mt-4 list-unstyled text-muted">
+                        <li><i class="bi bi-check-circle-fill text-success"></i> Available on Swiggy & Zomato</li>
+                        <li><i class="bi bi-check-circle-fill text-success"></i> Free Home Delivery in nearby sectors
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-6 text-center mt-4 mt-lg-0">
+                    <div id="heroSlider" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/slider 1.png" class="d-block w-100 rounded shadow-sm"
+                                    alt="Fresh Cakes">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="fw-bold">Fresh Cakes Everyday</h5>
+                                    <p>Delicious flavours made with love</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/slider 2.png" class="d-block w-100 rounded shadow-sm"
+                                    alt="Designer Theme Cakes">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="fw-bold">Designer Theme Cakes</h5>
+                                    <p>Perfect for birthdays & special occasions</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/slider 3.png" class="d-block w-100 rounded shadow-sm"
+                                    alt="Bakery Snacks">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="fw-bold">Tasty Bakery Snacks</h5>
+                                    <p>Freshly baked and hygienically prepared</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#heroSlider"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#heroSlider"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ABOUT -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-6">
+                    <h2>Who We Are</h2>
+                    <p class="text-muted">At Cake & Bakery Palace, baking is our passion. With years of experience and a
+                        love for creativity, we offer a wide variety of freshly baked items that cater to every taste
+                        and occasion.</p>
+
+                    <div class="row mt-3">
+                        <div class="col-sm-6 mb-2"><i class="bi bi-check2-circle me-2 text-success"></i> Fresh
+                            Ingredients</div>
+                        <div class="col-sm-6 mb-2"><i class="bi bi-check2-circle me-2 text-success"></i> Hygienic
+                            Preparation</div>
+                        <div class="col-sm-6 mb-2"><i class="bi bi-check2-circle me-2 text-success"></i> Custom Designs
+                        </div>
+                        <div class="col-sm-6 mb-2"><i class="bi bi-check2-circle me-2 text-success"></i> Affordable
+                            Prices</div>
+                        <div class="col-sm-6 mb-2"><i class="bi bi-check2-circle me-2 text-success"></i> On-Time
+                            Delivery</div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="p-4 rounded shadow-sm" style="background:#fff;border:1px solid #f3eaea">
+                        <h5 class="mb-3">Why Choose Us?</h5>
+                        <ul class="list-unstyled text-muted">
+                            <li>✔ 100% Eggless Options</li>
+                            <li>✔ Customised Theme Cakes</li>
+                            <li>✔ Perfect for Birthdays, Anniversaries & Corporate Events</li>
+                            <li>✔ Fast Delivery in XU-1 and surrounding areas</li>
+                            <li>✔ Trusted by hundreds of happy customers</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SPECIALITIES -->
+    <section id="specialities" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="mb-4">Our Specialities</h2>
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <div class="service-card h-100">
+                        <h5>🎂 Cakes</h5>
+                        <ul class="mb-0 text-muted">
+                            <li>Birthday Cakes</li>
+                            <li>Anniversary Cakes</li>
+                            <li>Kids Theme Cakes</li>
+                            <li>Photo Cakes</li>
+                            <li>Fondant & Designer Cakes</li>
+                            <li>Eggless Cakes</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="service-card h-100">
+                        <h5>🥐 Bakery Items</h5>
+                        <ul class="mb-0 text-muted">
+                            <li>Fresh Breads (Brown, White, Multigrain)</li>
+                            <li>Cookies (Chocolate, Butter, Atta, Dry Fruit)</li>
+                            <li>Muffins & Cupcakes</li>
+                            <li>Pastries & Donuts</li>
+                            <li>Garlic Bread & Pizza Base</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="service-card h-100">
+                        <h5>🍕 Snacks</h5>
+                        <ul class="mb-0 text-muted">
+                            <li>Veg Patties & Paneer Patties</li>
+                            <li>Cheese Garlic Bread</li>
+                            <li>Pizza, Burgers & Sandwiches</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="py-5">
+        <div class="container">
+            <h2 class="mb-4">Services</h2>
+            <div class="row gy-3">
+                <div class="col-md-4">
+                    <div class="p-3 rounded shadow-sm h-100">
+                        <h5>Free Home Delivery</h5>
+                        <p class="mb-0 text-muted">Get your favourite cake and bakery items delivered fast and fresh to
+                            your doorstep.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="p-3 rounded shadow-sm h-100">
+                        <h5>Custom Cake Design</h5>
+                        <p class="mb-0 text-muted">Send us your theme or photo and get your cake customized for any
+                            event.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="p-3 rounded shadow-sm h-100">
+                        <h5>Bulk Orders</h5>
+                        <p class="mb-0 text-muted">Perfect for school functions, office events, parties, and festive
+                            occasions.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mt-3">
+                    <div class="p-3 rounded shadow-sm h-100">
+                        <h5>Available on Swiggy & Zomato</h5>
+                        <p class="mb-0 text-muted">Order instantly with one tap — quick delivery within minutes!</p>
+                        <div class="mt-3 d-flex gap-2">
+                            <a class="btn btn-outline-dark" href="#" target="_blank"><i class="bi bi-basket"></i>
+                                Swiggy</a>
+                            <a class="btn btn-outline-danger" href="#" target="_blank"><i class="bi bi-fire"></i>
+                                Zomato</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mt-3">
+                    <div class="p-3 rounded shadow-sm h-100">
+                        <h5>100% Eggless Options</h5>
+                        <p class="mb-0 text-muted">We provide eggless options across our cake range for vegetarian
+                            customers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY -->
+    <!-- GALLERY -->
+<section id="gallery" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="mb-4 text-center">Gallery</h2>
+
+    <div class="row g-4">
+      <div class="col-6 col-md-4">
+        <img src="images/g-1.png" class="gallery-img" alt="Latest Cakes" data-caption="Freshly baked today">
+      </div>
+
+      <div class="col-6 col-md-4">
+        <img src="images/g-2.png" class="gallery-img" alt="Pastries" data-caption="Pastries & Donuts">
+      </div>
+
+      <div class="col-6 col-md-4">
+        <img src="images/g-3.png" class="gallery-img" alt="Cupcakes" data-caption="Cupcakes & Muffins">
+      </div>
+
+      <div class="col-6 col-md-4">
+        <img src="images/g-4.png" class="gallery-img" alt="Theme Cake" data-caption="Designer Theme Cake">
+      </div>
+
+      <div class="col-6 col-md-4">
+        <img src="images/g-5.png" class="gallery-img" alt="Birthday Cake" data-caption="Birthday & Anniversary Orders">
+      </div>
+
+      <div class="col-6 col-md-4">
+        <img src="images/g-6.png" class="gallery-img" alt="Bakery Snacks" data-caption="Bakery Snacks">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="py-5">
+        <div class="container">
+            <h2 class="mb-4">Testimonials</h2>
+
+            <div id="carouselTesti" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="testi text-center mx-auto" style="max-width:700px">
+                            <p class="mb-1">"Best cakes in XU-1! Super fresh and perfectly priced."</p>
+                            <small class="text-muted">— Neha Sharma</small>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="testi text-center mx-auto" style="max-width:700px">
+                            <p class="mb-1">"Custom cake delivered in 45 minutes. Loved the design!"</p>
+                            <small class="text-muted">— Rahul Verma</small>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="testi text-center mx-auto" style="max-width:700px">
+                            <p class="mb-1">"Pastries are amazing. Free home delivery makes it even better!"</p>
+                            <small class="text-muted">— Divya Singh</small>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselTesti"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselTesti"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="mb-4">Contact Us</h2>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="p-4 rounded shadow-sm bg-white">
+                        <h5>Cake & Bakery Palace</h5>
+                        <p class="mb-1">📍 Sector XU-1, Greater Noida</p>
+                        <p class="mb-1">📞 <a href="tel:+919999811167">9999811167</a></p>
+                        <p class="mb-1">🛵 Available On: Swiggy | Zomato</p>
+                        <p class="mb-1">🚚 Free Home Delivery Available</p>
+                        <p class="mb-1">⏰ Timings: 9 AM – 10 PM (Everyday)</p>
+
+                        <div class="mt-3">
+                            <a class="btn btn-primary me-2" href="#" id="order"><i class="bi bi-basket-fill"></i> Order
+                                on Swiggy</a>
+                            <a class="btn btn-danger" href="#"><i class="bi bi-lightning-fill"></i> Order on Zomato</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mt-3 mt-lg-0">
+                    <div class="p-4 rounded shadow-sm bg-white">
+                        <h5>Send a Message</h5>
+                        <form id="contactForm">
+                            <div class="mb-2">
+                                <label class="form-label small">Name</label>
+                                <input class="form-control" required id="name">
+                            </div>
+                            <div class="mb-2">
+                                <label class="form-label small">Phone</label>
+                                <input class="form-control" required id="phone">
+                            </div>
+                            <div class="mb-2">
+                                <label class="form-label small">Message</label>
+                                <textarea class="form-control" rows="3" id="message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-success">Send Message</button>
+                            <small class="d-block text-muted mt-2">(This form uses a mailto: link — replace with server
+                                handling for production.)</small>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="mt-4">
+        <div class="container text-center">
+            <p class="mb-1">© 2025 Cake & Bakery Palace | Sector XU-1 Greater Noida</p>
+            <p class="small">Freshly Baked. Hygienically Made. Delivered With Love. &nbsp;|&nbsp; 📞 9999811167
+                &nbsp;|&nbsp; Swiggy • Zomato</p>
+        </div>
+    </footer>
+
+    <!-- BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Simple gallery lightbox using bootstrap modal
+        document.querySelectorAll('.gallery-img').forEach(img => {
+            img.style.cursor = 'pointer'
+            img.addEventListener('click', () => {
+                const modal = new bootstrap.Modal(document.getElementById('galleryModal'))
+                document.getElementById('modalImg').src = img.src
+                document.getElementById('modalCaption').textContent = img.dataset.caption || img.alt || ''
+                modal.show()
+            })
+        })
+
+        // Contact form: opens email client with prefilled body (simple)
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const name = encodeURIComponent(document.getElementById('name').value)
+            const phone = encodeURIComponent(document.getElementById('phone').value)
+            const message = encodeURIComponent(document.getElementById('message').value)
+            const body = `Name: ${name}%0APhone: ${phone}%0A%0AMessage: ${message}`
+            window.location.href = `mailto:mintupal622010@gmail.com?subject=Website%20Enquiry&body=${body}`
+        })
+    </script>
+
+    <!-- Gallery modal -->
+    <div class="modal fade" id="galleryModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <img id="modalImg" src="" alt="" style="width:100%;height:auto;display:block">
+                </div>
+                <div class="modal-footer">
+                    <small id="modalCaption" class="text-muted"></small>
+                    <button type="button" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
